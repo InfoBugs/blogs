@@ -1,11 +1,52 @@
 ---
 layout: page
 ---
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta http-equiv="refresh" content="0;url=https://medium.com/@madhurendra.testing">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #f0f0f0; /* Set your desired background color */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #333; /* Set your desired text color */
+        }
+        a {
+            color: #0066cc; /* Set your desired link color */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #countdown {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #555; /* Set your desired countdown text color */
+        }
+    </style>
 </head>
 <body>
+    <p>Redirecting in <span id="countdown">5</span> seconds...</p>
+    <script>
+        var seconds = 5;
+        function countdown() {
+            document.getElementById('countdown').textContent = seconds;
+            if (seconds === 0) {
+                window.location.href = 'https://medium.com/@madhurendra.testing';
+            } else {
+                seconds--;
+                setTimeout(countdown, 1000);
+            }
+        }
+        countdown();
+    </script>
 </body>
 </html>
