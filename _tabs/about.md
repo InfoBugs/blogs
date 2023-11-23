@@ -4,10 +4,6 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
-
-
 > Hi, I am Madhuredra Kumar, a Security Analyst and a Master Certified Ethical Hacker by EC-COUNCIL. I am a Bug Hunter and Security Researcher with the goal of becoming OSCP certified and achieving more success.
 {: .prompt-tip }
 
